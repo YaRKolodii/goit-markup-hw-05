@@ -352,38 +352,7 @@
             </div>
         </section>
     </main>
-    <div class="modal-overlay">
-        <div class="modal">
-            <form class="form">
 
-                <legend class="group-title">Leave your contacts and we will call you back</legend>
-                <label class="form-label">Name
-                    <input class="form-input" type="text" name="user-name">
-                </label>
-
-                <label class="form-label">Phone
-                    <input class="form-input" type="tel" name="contact_tel">
-                </label>
-
-                <label class="form-label">Email
-                    <input class="form-input" type="email" name="email">
-                </label>
-
-                <label class="form-label">Comment
-                    <input class="form-input" type="text" name="comment">
-                </label>
-
-                <div class="container-privacy">
-                    <input type="checkbox" name="privacy_policy"></input>
-                    <label>I accept the terms and conditions of the
-                        <a>Privacy Policy</a>
-
-                    </label>
-                    <button class="button-form" type="submit" clas="form-button">Send</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <footer class="page-footer">
         <div class="container-footer">
@@ -427,15 +396,58 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <label>Subscribe</label>
-                <input><button type="submit" class="button-footer">Subscribe
-                    <svg class="icon-social" width="16" height="16">
-                        <use href="./images/icons.svg#icon-send"></use>
-                </button>
+            <div class="container-footer-form">
+                <p class="footer-paragraf">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-label">
+                        <input name="email" type="email" placeholder="E-mail" class="footer-input">
+                    </label>
+                    <button type="submit" class="button-footer">Subscribe
+                        <svg class="icon-footer-button" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                    </button>
+                </form>
+
             </div>
         </div>
     </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="button-close"><svg class="icon-close-modal" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <legend class="group-title">Leave your contacts and we will call you back</legend>
+                <label class="form-label">Name
+                    <input class="form-input" type="text" name="user-name">
+                </label>
+
+                <label class="form-label">Phone
+                    <input class="form-input" type="tel" name="contact_tel">
+                </label>
+
+                <label class="form-label">Email
+                    <input class="form-input" type="email" name="email">
+                </label>
+
+                <label class="form-label">Comment
+                    <input class="form-input" type="text" name="comment">
+                </label>
+
+                <div class="container-privacy">
+                    <input type="checkbox" name="privacy_policy"></input>
+                    <label>I accept the terms and conditions of the
+                        <a>Privacy Policy</a>
+
+                    </label>
+                    <button class="button-form" type="submit" clas="form-button">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>

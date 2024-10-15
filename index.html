@@ -355,32 +355,34 @@
     <div class="modal-overlay">
         <div class="modal">
             <form class="form">
-                <fieldset class="form-group">
-                    <legend class="group-title">Leave your contacts and we will call you back</legend>
-                    <label class="form-label">Name
-                        <input type="text" name="user-name">
-                    </label>
 
-                    <label class="form-label">Phone
-                        <input type="tel" name="tel">
-                    </label>
+                <legend class="group-title">Leave your contacts and we will call you back</legend>
+                <label class="form-label">Name
+                    <input class="form-input" type="text" name="user-name">
+                </label>
 
-                    <label class="form-label">Email
-                        <input type="email" name="email">
-                    </label>
+                <label class="form-label">Phone
+                    <input class="form-input" type="tel" name="contact_tel">
+                </label>
 
-                    <label class="form-label">Comment
-                        <input type="text" name="comment">
-                    </label>
-                </fieldset>
-                <div>
+                <label class="form-label">Email
+                    <input class="form-input" type="email" name="email">
+                </label>
+
+                <label class="form-label">Comment
+                    <input class="form-input" type="text" name="comment">
+                </label>
+
+                <div class="container-privacy">
                     <input type="checkbox" name="privacy_policy"></input>
                     <label>I accept the terms and conditions of the
                         <a>Privacy Policy</a>
+
                     </label>
+                    <button class="button-form" type="submit" clas="form-button">Send</button>
                 </div>
 
-                <button></button>
+
 
             </form>
         </div>
@@ -426,6 +428,13 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <label>Subscribe</label>
+                <input><button type="submit" class="button-footer">Subscribe
+                    <svg class="icon-social" width="16" height="16">
+                        <use href="./images/icons.svg#icon-send"></use>
+                </button>
             </div>
         </div>
     </footer>
